@@ -1,0 +1,30 @@
+<div class="clearfix" style="margin-bottom: 20px;">
+  <%= image_tag('manybots-googlecalendar/icon.png', :align => :left, :width => 40, :style=> 'margin-right: 10px;') %>
+  <h2>Google Calendar Observer</h2>
+</div>
+
+<%- @calendars.each do |calendar| -%>
+  <div class="card">
+    <h4>
+      <%= calendar.remote_account_id %> 
+      <span class="meta">
+        <%= link_to 'Delete', calendar_path(calendar.id), :method => :delete, :confirm => 'Are you sure?', :class => '' %>
+      </span>
+    </h4>
+
+    <%- if @schedules and @schedules.keys.include?("import_manybots_googlecalendar_events_#{calendar.id}") -%> 
+      <p>Importing events from <strong><%= calendar.remote_account_id %></strong> every 3 hours</p>
+      <p><%= link_to 'Stop importing', import_calendar_path(calendar.id), :method => :post, :confirm => 'Sure?' %> </p>
+    <%- else -%>
+    
+      <%= form_tag import_calendar_path(calendar.id), :method => :post, :class => 'clearfix' do %>    
+        <p class="button save" style="float:left;margin: 0 5px 0 0;">
+          <%= submit_tag 'Start importing', :id => 'submit'%> 
+        </p>
+        <span class="meta" style="line-height: 32px;">and refresh every 3 hours.</span>
+      <%- end -%>
+    <%- end -%>
+    <p></p>
+  </div>
+<%- end if @calendars -%>
+<p><%= link_to 'Register a Google account', new_calendar_path %></p>
