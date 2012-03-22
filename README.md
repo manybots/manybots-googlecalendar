@@ -14,7 +14,7 @@ First, require the gem: edit your `Gemfile`, add the following, and run `bundle 
 
 ```
 gem 'manybots-googlecalendar', :git => 'git://github.com/manybots/manybots-googlecalendar.git'
-gem 'google-api-client', :require => google/api_client'
+gem 'google-api-client', :require => 'google/api_client'
 ```
 
 Second, run the manybots-googlecalendar install generator (mind the underscore):
@@ -42,7 +42,7 @@ Your Google Calendar Observer uses OAuth to authorize you (and/or your other Man
 
 <img src="https://img.skitch.com/20120313-x8yp2241bhthrwjtxege9abdpn.png"/>
 
-<img src="https://img.skitch.com/20120313-epabybce35t9q2ruini21kwgaq.png"/>
+<img src="https://img.skitch.com/20120322-x8x3ykic2cewjwttynxt368j7g.png"/>
 
 <img src="https://img.skitch.com/20120313-re8enpenygw2d91tjqmcfqpsei.png" />
 
