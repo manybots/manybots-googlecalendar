@@ -3,7 +3,6 @@ module ManybotsGooglecalendar
     require 'oauth2'
     
     before_filter :authenticate_user!
-    layout 'shared/application'
     
     def index
       @calendars = current_user.oauth_accounts.where(:client_application_id => current_app.id)
