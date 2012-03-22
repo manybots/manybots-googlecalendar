@@ -42,7 +42,7 @@ Your Google Calendar Observer uses OAuth to authorize you (and/or your other Man
 
 <img src="https://img.skitch.com/20120313-x8yp2241bhthrwjtxege9abdpn.png"/>
 
-<img src="https://img.skitch.com/20120313-epabybce35t9q2ruini21kwgaq.png"/>
+<img src="https://img.skitch.com/20120322-x8x3ykic2cewjwttynxt368j7g.png"/>
 
 <img src="https://img.skitch.com/20120313-re8enpenygw2d91tjqmcfqpsei.png" />
 
