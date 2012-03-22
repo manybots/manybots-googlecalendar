@@ -14,7 +14,7 @@ First, require the gem: edit your `Gemfile`, add the following, and run `bundle 
 
 ```
 gem 'manybots-googlecalendar', :git => 'git://github.com/manybots/manybots-googlecalendar.git'
-gem 'google-api-client', :require => google/api_client'
+gem 'google-api-client', :require => 'google/api_client'
 ```
 
 Second, run the manybots-googlecalendar install generator (mind the underscore):
